@@ -24,9 +24,20 @@
 				<td><label>Código materia 1:</label></td>
 				<td><input type="text" th:field="${matricula.materia.codigo}"></td>
 			</tr>
-			
+			<tr>
+				<td><label>Código materia 2:</label></td>
+				<td><input type="text" th:field="${matricula.materia.codigo}"></td>
+			</tr>
+			<tr>
+				<td><label>Código materia 3:</label></td>
+				<td><input type="text" th:field="${matricula.materia.codigo}"></td>
+			</tr>
+			<tr>
+				<td><label>Código materia 4:</label></td>
+				<td><input type="text" th:field="${matricula.materia.codigo}"></td>
+			</tr>
 		</table>
-		<button type="submit" class="btn btn-primary btn-sm">Guardar</button>
+		<button type="submit" class="btn btn-primary btn-sm">Matricular</button>
 	</form>
 	<form th:action="@{/matricula/reporte}" th:objetct="${matricula}" th:method="GET">
 		<button type="submit" class="btn btn-primary btn-sm">Reporte</button>

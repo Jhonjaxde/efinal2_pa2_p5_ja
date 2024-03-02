@@ -35,11 +35,10 @@ public class MatriculaController {
 		return "vistaNuevaMatricula";
 		
 	}
+	
 	//http://localhost:8085/matricula/guardar
 	@PostMapping("/guardar")
 	public String guardar(Matricula matricula) {
-		
-		
 		
 		if(matricula.getEstudiante().getCedula().contains(this.estudianteService.buscarPorCedula(matricula.getEstudiante().getCedula()).getCedula())) {
 			
